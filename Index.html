@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 Mês De Namoro!</title>
+    
+    <style>
+        h1{
+            text-shadow: 0.5px 1px #111111;
+        }
+        h5{
+            padding-top: 90px;
+            text-shadow: 0.5px 1px #111111;
+        }
+               
+        body{
+            color:rgb(160, 86, 154);
+            background-color:rgb(160, 86, 154);
+            background-size: 100%;
+            max-height: 1200px;
+            padding: 100px 0 50px 0;
+            
+        }
+        .caixa{
+            
+            margin:auto;
+            width: 500px;
+            height: 500px;
+            background-color:rgba(29, 5, 5, 0.1);
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url("Design\ sem\ nome.png");
+            
+        }
+        #sim{
+           
+            width: 60px;
+            height: 40px;
+            background-color:rgb(165, 9, 105);
+            border-radius: 10px;
+            color:white;
+            border-color: white;
+            margin-left:-30px;
+        }
+        #nao{
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            background-color:rgb(165, 9, 105);
+            border-radius: 10px;
+            color:white;
+            border-color:white;
+            margin-left:10px;
+        
+        }
+       
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="caixa">
+       <h1>FELIZ 1 MÊS DE NAMORO</h1>
+    
+         <h5>Você promete continuar sendo esse anjo na minha vida?</h5>
+
+         <a href="https://youtu.be/I00Q0i6JVlM?si=fwg4bYkYNKFUGgVa"><button id="sim">Sim!</button></a>  
+         <button onmouseover="fuja()" id="nao">Não!</button>
+         <br>
+         <img src="photofunky-unscreen.gif">
+       
+
+    </div>
+
+    <script>
+        function fuja(){
+    var botaoNao = document.getElementById("nao");
+
+    var largurajanela = window.innerWidth;
+    var alturajanela = window.innerHeight;
+
+    var maxX = largurajanela - botaoNao.offsetWidth;
+    var maxY = alturajanela - botaoNao.offsetHeight;
+
+    var aleatorioX = Math.floor(Math.random() * maxX);
+    var aleatorioY = Math.floor(Math.random() * maxY);
+
+    botaoNao.style.left = aleatorioX + "px";
+    botaoNao.style.top = aleatorioY + "px";
+    }
+    </script>
+   
+</body>
+
+
+</html>
